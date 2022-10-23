@@ -2,9 +2,9 @@
   <div class="app_container">
     <div class="header_container"></div>
     <div class="page_container">
+      <h1>Hello World</h1>
       <router-view></router-view>
     </div>
-    <global-modal></global-modal>
   </div>
 </template>
 
