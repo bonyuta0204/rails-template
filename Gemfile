@@ -25,31 +25,33 @@ gem 'sentry-rails'
 gem 'sentry-ruby'
 
 gem 'config'
-gem 'jwt'
 gem 'rake'
-gem 'rspec'
-gem 'rspec-rails'
-
-gem 'rubocop', require: false
-gem 'rubocop-rails',  require: false
-gem 'rubocop-rspec',  require: false
 
 gem 'dry-struct'
 gem 'dry-types'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-rails'
+
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+end
+
+group :test do
+  gem 'rspec'
+  gem 'rspec-rails'
   gem 'super_diff'
 end
 
 group :development do
+  gem 'rubocop', require: false
+  gem 'rubocop-rails',  require: false
+  gem 'rubocop-rspec',  require: false
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.

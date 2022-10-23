@@ -131,7 +131,6 @@ GEM
     ice_nine (0.11.2)
     jaro_winkler (1.5.4)
     json (2.6.2)
-    jwt (2.5.0)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -147,13 +146,11 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.5.0)
     mysql2 (0.5.3)
     nio4r (2.5.8)
-    nokogiri (1.13.3)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.13.3-x86_64-darwin)
       racc (~> 1.4)
     optimist (3.0.1)
     parallel (1.22.1)
@@ -329,7 +326,6 @@ DEPENDENCIES
   factory_bot
   factory_bot_rails
   faker
-  jwt
   listen (~> 3.3)
   mysql2
   pry

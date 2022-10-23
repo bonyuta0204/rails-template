@@ -51,6 +51,13 @@ create_table 'metrics', force: :cascade do |t|
   t.datetime 'updated_at', precision: 6, null: false
 end
 
+create_table 'metric_structures', force: :cascade do |t|
+  t.bigint   'corporation_id',                null: false
+  t.json     'metric_structure',              null: false
+  t.datetime 'created_at', precision: 6, null: false
+  t.datetime 'updated_at', precision: 6, null: false
+end
+
 create_table 'metric_values', force: :cascade do |t|
   t.bigint   'metric_id',                     null: false
   t.bigint   'corporation_id',                null: false
